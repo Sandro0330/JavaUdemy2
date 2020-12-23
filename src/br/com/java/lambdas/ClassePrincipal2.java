@@ -15,5 +15,10 @@ public class ClassePrincipal2 {
 
         soma = (x, y) -> x / y; //Não precisa de retorno pois não tem chaves, pode até fazer uma nova operação
         System.out.println(soma.executar(8, 2)); // o return já esta implicito
+
+        System.out.println(soma.saudacao());
+
+
+        System.out.println(Calculo.aviso());
     }
 }
