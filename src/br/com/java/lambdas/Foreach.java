@@ -19,9 +19,21 @@ public class Foreach {
         });
 
        // aprovados.forEach((nome) -> System.out.println(nome + "!!!!")); funciona do mesmo jeito
-
-        System.out.println("\nMethod Reference...");
+        System.out.println("\nMethod Reference #1...");
         aprovados.forEach(System.out::println);
 
+
+        // Foreach Funcional
+        System.out.println("\nPercorrendo o Array com Lambda #02...");
+        aprovados.forEach(nome -> meuImprimir(nome));
+
+
+        System.out.println("\nMethod Reference #2...");
+        aprovados.forEach(Foreach::meuImprimir);
     }
+    // Foreach Funcional
+    static void meuImprimir(String nome) {
+        System.out.println("Oi meu nome é " + nome);
+    }
+
 }
