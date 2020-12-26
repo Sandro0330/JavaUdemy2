@@ -11,7 +11,7 @@ public class OperadorBinario {
         System.out.println("=============================================================");
         BinaryOperator<Double> media = (Double n1, Double n2) -> (n1 + n2) /2;
         System.out.println(media.apply(9.8, 5.7));
-        
+
         System.out.println("=============================================================");
         BiFunction<Double, Double, String> resultado = (n1, n2) -> ((n1 + n2) /2) >= 7 ? "Aprovado" : "Reprovado";
         System.out.println(resultado.apply(5.1, 4.4));
